@@ -21,5 +21,14 @@
   "bugs": {
     "url": "https://github.com/salindersidhu/react-native-map-scale-bar/issues"
   },
-  "homepage": "https://github.com/salindersidhu/react-native-map-scale-bar#readme"
+  "homepage": "https://github.com/salindersidhu/react-native-map-scale-bar#readme",
+  "dependencies": {
+    "ramda": "^0.27.1",
+    "react": "^17.0.2",
+    "react-native": "^0.64.1",
+    "react-native-safe-area-context": "^3.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.0"
+  }
 }
