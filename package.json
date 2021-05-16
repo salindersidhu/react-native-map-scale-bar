@@ -1,0 +1,25 @@
+{
+  "name": "react-native-map-scale-bar",
+  "version": "1.0.0",
+  "description": "Map scale bar for React Native Mapbox GL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salindersidhu/react-native-map-scale-bar.git"
+  },
+  "keywords": [
+    "scale",
+    "bar",
+    "mapbox",
+    "react"
+  ],
+  "author": "Salinder Sidhu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/salindersidhu/react-native-map-scale-bar/issues"
+  },
+  "homepage": "https://github.com/salindersidhu/react-native-map-scale-bar#readme"
+}
