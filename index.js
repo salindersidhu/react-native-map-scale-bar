@@ -1,7 +1,6 @@
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import React, { useState, useEffect } from "react";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import Bar from "./Bar";
 import Styles from "./styles";
@@ -26,7 +25,6 @@ function ScaleBar(props) {
     imperialBarTextStyle,
   } = props;
 
-  const insets = useSafeAreaInsets();
   const [textMetric, setTextMetric] = useState("");
   const [textImperial, setTextImperial] = useState("");
   const [lengthMetric, setLengthMetric] = useState(0);
@@ -46,8 +44,8 @@ function ScaleBar(props) {
     <View
       style={{
         ...Styles.container,
-        left: left + insets.left,
-        bottom: bottom + insets.bottom,
+        left: left,
+        bottom: bottom,
       }}
     >
       <Bar
