@@ -22,11 +22,12 @@ export const SCALE_STEPS_IN_FEET = [
   200 * FEET_PER_MILES,
   500 * FEET_PER_MILES,
   1000 * FEET_PER_MILES,
+  2000 * FEET_PER_MILES,
 ];
 
 export const SCALE_STEPS_IN_METERS = [
   5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000,
-  200000, 500000, 1000000, 2000000,
+  200000, 500000, 1000000, 2000000, 5000000,
 ];
 
 export const SCALE_TEXT_IN_FEET = [
@@ -48,6 +49,7 @@ export const SCALE_TEXT_IN_FEET = [
   "200 mi",
   "500 mi",
   "1000 mi",
+  "2000 mi",
 ];
 
 export const SCALE_TEXT_IN_METERS = [
@@ -69,4 +71,5 @@ export const SCALE_TEXT_IN_METERS = [
   "500 km",
   "1000 km",
   "2000 km",
+  "5000 km",
 ];

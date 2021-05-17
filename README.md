@@ -18,7 +18,7 @@ npm install --save react-native-map-scale-bar
 import ScaleBar from "react-native-map-scale-bar";
 ```
 
-2. Create state variables to hold MapView's center and zoom properties.
+2. Create states to hold MapView's center and zoom properties.
 
 ```javascript
 const [zoom, setZoom] = useState(0);
@@ -56,6 +56,19 @@ const handleMapChange = async () => {
 ```javascript
 <ScaleBar zoom={zoom} latitude={center[1]}>
 ```
+
+## Props
+
+| Prop                 | Required |   Type   |                                                                                                  Default                                                                                                   | Description                                 |
+| :------------------- | :------: | :------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------ |
+| zoom                 |   yes    | `number` |                                                                                                     -                                                                                                      | Zoom level to adjust the scale bar.         |
+| latitude             |   yes    | `number` |                                                                                                     -                                                                                                      | Latitude to adjust the scale bar precision. |
+| left                 |    no    | `number` |                                                                                                     10                                                                                                     | Padding with left border of the screen.     |
+| bottom               |    no    | `number` |                                                                                                     32                                                                                                     | Padding with bottom of the screen.          |
+| metricBarStyle       |    no    | `object` | `{ borderWidth: 1, borderStyle: "solid", borderTopWidth: 0, borderBottomWidth: 1, borderColor: "rgba(0, 0, 0, 1)", borderBottomColor: "rgba(0, 0, 0, 0.4)", backgroundColor: "rgba(255, 255, 255, 0.5)" }` | Styles for the metric bar.                  |
+| metricBarTextStyle   |    no    | `object` |                                                       `{ fontSize: 10, paddingTop: 5, paddingLeft: 5, paddingBottom: 5, color: "rgba(0, 0, 0, 1)"}`                                                        | Styles for the metric bar's text.           |
+| imperialBarStyle     |    no    | `object` |                      `{ borderWidth: 1, borderStyle: "solid", borderTopWidth: 0, borderBottomWidth: 0, borderColor: "rgba(0, 0, 0, 1)", backgroundColor: "rgba(255, 255, 255, 0.5)"}`                      | Styles for the imperial bar.                |
+| imperialBarTextStyle |    no    | `object` |                                                       `{ fontSize: 10, paddingTop: 5, paddingLeft: 5, paddingBottom: 5, color: "rgba(0, 0, 0, 1)"}`                                                        | Styles for the imperial bar's text.         |
 
 ## Example
 
