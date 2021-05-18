@@ -2,9 +2,9 @@
   "name": "react-native-map-scale-bar",
   "version": "1.0.1",
   "description": "Map scale bar for React Native Mapbox GL",
-  "main": "index.js",
+  "main": "src/index.js",
   "files": [
-    "Bar",
+    "src",
     "*.js"
   ],
   "scripts": {
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/salindersidhu/react-native-map-scale-bar#readme",
   "dependencies": {
+    "prop-types": "^15.7.2",
     "ramda": "^0.27.1"
   },
   "devDependencies": {
