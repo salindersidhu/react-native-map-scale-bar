@@ -4,6 +4,7 @@
   "description": "Map scale bar for React Native Mapbox GL",
   "main": "index.js",
   "files": [
+    "ScaleBar",
     "Bar",
     "*.js"
   ],
