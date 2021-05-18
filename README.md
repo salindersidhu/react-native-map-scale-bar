@@ -2,6 +2,8 @@
 
 A customizable map scale bar for React Native Mapbox GL.
 
+[![Downloads](https://img.shields.io/npm/dt/react-native-map-scale-bar.svg?style=for-the-badge)](https://www.npmjs.com/package/react-map-native-scale-bar) [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=for-the-badge)](/LICENSE)
+
 ![image](https://user-images.githubusercontent.com/12175684/118427794-0893f600-b69c-11eb-92e3-bc50c41d04f7.png)
 
 ## Installation
@@ -47,7 +49,7 @@ const handleMapChange = async () => {
   ref={map}
   onRegionDidchange={handleMapChange}
   onRegionIsChanging={handleMapChange}
-  OnRegionWillChange={_.debounce(handleMapChange, 200)}
+  onRegionWillChange={_.debounce(handleMapChange, 200)}
 />
 ```
 
@@ -75,14 +77,15 @@ const handleMapChange = async () => {
 ![Animation](https://user-images.githubusercontent.com/12175684/118429275-53633d00-b69f-11eb-8de2-b4076bc308de.gif)
 
 ```javascript
-import _ from "lodash";
 import React from "react";
 import { StyleSheet } from "react-native";
 import { useState, useEffect, useRef } from "react";
+
+import _ from "lodash";
 import ScaleBar from "react-native-map-scale-bar";
 import MapboxGL from "@react-native-mapbox-gl/maps";
 
-const Styles = StyleSheet.create({
+const STYLES = StyleSheet.create({
   map: {
     flex: 1,
   },
@@ -111,10 +114,10 @@ function App() {
     <>
       <MapboxGL.MapView
         ref={map}
-        style={Styles.map}
+        style={STYLES.map}
         onRegionDidchange={handleMapChange}
         onRegionIsChanging={handleMapChange}
-        OnRegionWillChange={_.debounce(handleMapChange, 200)}
+        onRegionWillChange={_.debounce(handleMapChange, 200)}
       />
       <ScaleBar zoom={zoom} latitude={center[1]} />
     </>
@@ -126,7 +129,7 @@ export default App;
 
 ## Credits
 
-Original model based on code from [ScaleBar](https://github.com/felixgourdeau/ScaleBar).
+This project adapted code from [ScaleBar](https://github.com/felixgourdeau/ScaleBar).
 
 ## Contributing
 
