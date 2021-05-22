@@ -2,7 +2,7 @@
 
 A customizable map scale bar for React Native Mapbox GL.
 
-[![Downloads](https://img.shields.io/npm/dt/react-native-map-scale-bar.svg?style=for-the-badge)](https://www.npmjs.com/package/react-map-native-scale-bar) [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=for-the-badge)](/LICENSE)
+[![Downloads](https://img.shields.io/npm/dt/react-native-map-scale-bar.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-map-scale-bar) [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=for-the-badge)](/LICENSE)
 
 ![image](https://user-images.githubusercontent.com/12175684/118427794-0893f600-b69c-11eb-92e3-bc50c41d04f7.png)
 
