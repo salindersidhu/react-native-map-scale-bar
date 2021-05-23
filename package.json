@@ -1,6 +1,6 @@
 {
   "name": "react-native-map-scale-bar",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Map scale bar for React Native Mapbox GL",
   "main": "src/index.js",
   "files": [
