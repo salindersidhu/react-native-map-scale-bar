@@ -32,16 +32,9 @@ const trimToDigits = R.curry(
   (digits, number) => +Number(number).toFixed(digits)
 );
 
-// /**
-//  * Trim a number to 7 digits.
-//  *
-//  * @param {number} number - A number to trim.
-//  * @returns {number} - A number trimed to 7 digits.
-//  */
-// const trimTo7digits = trimCurry(7);
-
 /**
- * Return the size of the scale using the scale step and resolution in imperial units.
+ * Return the size of the scale using the scale step and resolution in imperial
+ * units.
  *
  * @public
  * @param {number} step - The scale step.
