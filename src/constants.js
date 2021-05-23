@@ -1,8 +1,34 @@
+/**
+ * Copyright (c) Salinder Sidhu and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ */
+
+/**
+ * Number of feet per mile.
+ */
 export const FEET_PER_MILES = 5280;
+
+/**
+ * Number of feet per meter.
+ */
 export const FEET_PER_METER = 3.28084;
-export const SCALE_SCREEN_RATIO = 0.4;
+
+/**
+ * Ratio of the max scale draw width to the screen width.
+ */
+export const SCALE_SCREEN_RATIO = 0.45;
+
+/**
+ * Tile size in meters at 0 zoom level.
+ */
 export const TILE_SIZE_METERS_AT_0_ZOOM = 156543.03;
 
+/**
+ * Scale steps in feet.
+ */
 export const SCALE_STEPS_IN_FEET = [
   10,
   20,
@@ -25,51 +51,10 @@ export const SCALE_STEPS_IN_FEET = [
   2000 * FEET_PER_MILES,
 ];
 
+/**
+ * Scale steps in meters.
+ */
 export const SCALE_STEPS_IN_METERS = [
   5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000,
   200000, 500000, 1000000, 2000000, 5000000,
-];
-
-export const SCALE_TEXT_IN_FEET = [
-  "10 ft",
-  "20 ft",
-  "50 ft",
-  "100 ft",
-  "200 ft",
-  "500 ft",
-  "1000 ft",
-  "0.5 mi",
-  "1 mi",
-  "2 mi",
-  "5 mi",
-  "10 mi",
-  "20 mi",
-  "50 mi",
-  "100 mi",
-  "200 mi",
-  "500 mi",
-  "1000 mi",
-  "2000 mi",
-];
-
-export const SCALE_TEXT_IN_METERS = [
-  "5 m",
-  "10 m",
-  "20 m",
-  "50 m",
-  "100 m",
-  "200 m",
-  "500 m",
-  "1 km",
-  "2 km",
-  "5 km",
-  "10 km",
-  "20 km",
-  "50 km",
-  "100 km",
-  "200 km",
-  "500 km",
-  "1000 km",
-  "2000 km",
-  "5000 km",
 ];

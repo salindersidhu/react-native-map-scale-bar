@@ -1,3 +1,11 @@
+/**
+ * Copyright (c) Salinder Sidhu and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ */
+
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import React, { useState, useEffect } from "react";
@@ -13,6 +21,11 @@ import {
   getResolutionFromZoomAndLatitude,
 } from "./utils";
 
+/**
+ * A customizable map scale for React Native Mapbox GL. Displays two bars
+ * across the screen, one as metric (m and km) and another as Imperial (feet
+ * and miles).
+ */
 function ScaleBar(props) {
   const {
     left,
@@ -34,10 +47,12 @@ function ScaleBar(props) {
     let resolution = getResolutionFromZoomAndLatitude(zoom, latitude);
     let step = getStepFromResolution(resolution);
 
-    setTextMetric(getScaleTextInMeters(step));
-    setTextImperial(getScaleTextInFeet(step));
+    // Generate length and text for the metric bar
     setLengthMetric(getScaleSizeInMeters(step, resolution));
+    setTextMetric(getScaleTextInMeters(step));
+    // Generate length and text for the imperial bar
     setLengthImperial(getScaleSizeInFeet(step, resolution));
+    setTextImperial(getScaleTextInFeet(step));
   }, [zoom, latitude]);
 
   return (
@@ -78,13 +93,37 @@ ScaleBar.defaultProps = {
 };
 
 ScaleBar.propTypes = {
+  /**
+   * Padding with left border of the screen.
+   */
   left: PropTypes.number,
+  /**
+   * Padding with bottom of the screen.
+   */
   bottom: PropTypes.number,
+  /**
+   * Zoom level to adjust the scale bar.
+   */
   zoom: PropTypes.number.isRequired,
+  /**
+   * Latitude to adjust the scale bar precision.
+   */
   latitude: PropTypes.number.isRequired,
+  /**
+   * Styles for the metric bar.
+   */
   metricBarStyle: PropTypes.object,
+  /**
+   * Styles for the metric bar's text.
+   */
   metricBarTextStyle: PropTypes.object,
+  /**
+   * Styles for the imperial bar.
+   */
   imperialBarStyle: PropTypes.object,
+  /**
+   * Styles for the imperial bar's text.
+   */
   imperialBarTextStyle: PropTypes.object,
 };
 
